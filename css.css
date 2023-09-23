@@ -1,0 +1,102 @@
+body {
+  /* font-family: Blueberry; */
+  font-family: Arial, sans-serif;
+  background-image: url("./img/desain\ bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.judul {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@font-face {
+  font-family: "Blueberry";
+  src: url("./font/Blueberry.ttf");
+}
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+
+.button {
+  flex: 0 0 0;
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding-bottom: 10px;
+}
+.canvas-container {
+  display: flex;
+  flex-direction: column; /* Tampilkan elemen secara vertikal */
+  align-items: center; /* Tengahkan elemen horizontal */
+  height: 100%;
+}
+canvas {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+  background-color: white;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: end;
+  /* Tampilkan tombol secara vertikal */
+}
+.my-button {
+  margin-top: 10px;
+  /* margin-bottom: 5px; Atur margin bawah tombol */
+  background: white;
+  color: white;
+  border: 0;
+}
+.canvas-title {
+  /* background-color: blue; */
+  color: black;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: auto; /* Atur margin bawah title */
+}
+.canvas-body {
+  /* border: 1px solid #ccc; */
+  display: block;
+  /* display: flex; */
+  background-color: white;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 100px;
+}
+
+.logo {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* right: auto; */
+  /* display: flex; */
+  pointer-events: none;
+  justify-content: right;
+  align-items: right;
+  /* transform: translateY(-50%); */
+  /* width: 40px;
+  height: 40px; */
+}
+
+.btn-upload {
+  cursor: pointer;
+  color: white;
+  background-color: white; /* Ubah warna background menjadi biru */
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.btn-upload:hover {
+  background-color: #0056b3;
+}
