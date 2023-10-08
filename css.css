@@ -1,7 +1,7 @@
 body {
   /* font-family: Blueberry; */
   font-family: Arial, sans-serif;
-  background-image: url("./img/desain\ bg.png");
+  background-image: url("./img/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -99,4 +99,43 @@ canvas {
 
 .btn-upload:hover {
   background-color: #0056b3;
+}
+
+.btn-custom {
+  position: relative;
+  color: #0056b3;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn-custom__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  z-index: 10;
+  margin: auto;
+  margin-left: -10px;
+  line-height: 50px;
+  border-color: rgb(202, 79, 233);
+  border: 3px solid;
+}
+
+.btn-custom__label {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+  background-color: #0056b3;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 10px;
 }
