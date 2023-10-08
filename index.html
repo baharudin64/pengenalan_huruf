@@ -23,35 +23,58 @@
 
   </head>
   <body>
-    <img src="img/huruf.png" alt="" class="img-fluid mx-auto d-block" width="350" height="200">
+    <img src="img/huruf3.png" alt="" class="img-fluid mx-auto d-block" width="550" height="350">
 
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2" >
           <div class="d-flex flex-column justify-content-center h-100 pb-5">
-            <label for="imageInput" class="btn btn-upload btn-primary text-center text-white fw-bold">Upload</label>
-            <input type="file" class="form-control d-none" id="imageInput" accept="image/*">
-            <button class="btn btn-primary my-button text-center text-white fw-bold"  onclick="enableDrawing()">Menulis</button>
-            <button class="btn btn-primary my-button text-center text-white fw-bold" onclick="clearCanvas()">Clear</button>          
+              <button class="btn-custom mb-2">
+              <div class="btn-custom__icon d-none d-md-block" style="border:1px solid #f72933;">
+                <img src="img/upload.png" alt=""  height="60%" >
+              </div>
+              <label for="imageInput" class="btn-custom__label text-center text-white fw-bold" style="background-color: #f72933;" >
+                Upload
+              </label>
+              <input type="file" class="form-control d-none" id="imageInput" accept="image/*">
+            </button>
+
+            <button class="btn-custom mt-2 mb-3 ">
+              <div class="btn-custom__icon d-none d-md-block " style="border:1px solid #e99c0d;">
+                <img src="img/nulis2.png" alt=""  height="65%" >
+              </div>
+              <div class="btn-custom__label text-white fw-bold  " style="background-color: #e99c0d;" onclick="enableDrawing()">
+                Menulis
+              </div>
+            </button>
+
+            <button class="btn-custom mt-1">
+              <div class="btn-custom__icon d-none d-md-block" style="border:1px solid #841c8d;">
+                <img src="img/sampah.png" alt=""  height="55%" >
+              </div>
+              <div class="btn-custom__label text-center text-white fw-bold " style="background-color: #841c8d;" onclick="clearCanvas()">
+                Clear
+              </div>
+            </button>    
           </div>
         </div>
         <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
           <div class="canvas-container mt-2">            
-            <canvas id="myCanvas" width="300" height="200"></canvas>
+            <canvas id="myCanvas" width="300" height="200" ></canvas>
               <div class=" d-flex d-md-block">
-                <button class="btn btn-primary my-button text-center fw-bold " style="margin-right: 50px; width: 160px;" onclick="Generate()">Bahasa Inggris</button>
-                <button class="btn btn-primary my-button text-center fw-bold d-md-none " onclick="Generate1()">Bahasa Indonesia</button>
+                <button class="btn my-button text-center text-black fw-bold " style="margin-right: 40px; width: 160px; border:2px solid #080808; background-color: #ffffff" onclick="Generate()">Bahasa Inggris</button>
+                <button class="btn btn-dark my-button text-center fw-bold d-md-none " style="border:2px solid #ffffff;" onclick="Generate1()">Bahasa Indonesia</button>
              </div>
           </div>
         </div>
         <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
           <div class="canvas-container mt-2">
-            <canvas id="Canvas2" width="400" height="200"></canvas>
-            <button class="btn btn-primary my-button text-center fw-bold d-none d-md-block" onclick="Generate1()">Bahasa Indonesia</button>
+            <canvas id="Canvas2" width="400" height="200" style="border:1px solid #d3b974;"></canvas>
+            <button class="btn btn-dark my-button text-center fw-bold d-none d-md-block" style="border:2px solid #ffffff;" onclick="Generate1()">Bahasa Indonesia</button>
           </div>
         </div>  
         </div>
-
+          
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     
