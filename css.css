@@ -121,9 +121,10 @@ canvas {
   z-index: 10;
   margin: auto;
   margin-left: -10px;
-  line-height: 50px;
+  line-height: 30px;
   border-color: rgb(202, 79, 233);
   border: 3px solid;
+  overflow: hidden;
 }
 
 .btn-custom__label {
@@ -138,4 +139,37 @@ canvas {
   font-weight: bold;
   line-height: 40px;
   margin-top: 10px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .btn-custom__icon {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+  }
+
+  .btn-custom__label {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .btn-custom__icon {
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+  }
+
+  .btn-custom__label {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 19px;
+    line-height: 40px;
+  }
 }
